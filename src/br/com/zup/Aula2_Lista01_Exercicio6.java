@@ -19,12 +19,12 @@ public class Aula2_Lista01_Exercicio6 {
         float sindicato = salarioBruto * 0.05F;
         // Calculo imposto de renda
         float impostoDeRenda = salarioBruto * 0.11F;
+        //Calculo do salário láquido
+        double salarioLiquido = salarioBruto - inss - sindicato - impostoDeRenda;
 
-
-
-        System.out.println("Você trabalhou " + quantidadeHorasTrabalhadas + "  Seu salário por hora é R$ " + salarioHora);
+        System.out.println("Você trabalhou " + quantidadeHorasTrabalhadas + " horas. Seu salário por hora é R$ " + salarioHora + " reais");
         System.out.println("Seu salário bruto será R$ " + salarioBruto + " reais");
-        System.out.println("Seu salário sem impostos seria R$" + salario);
+        System.out.println("Seu salário líquido será R$" + salarioLiquido + " reais");
         System.out.println("Foi descontado R$" + inss + " referente ao INSS e R$" + sindicato + " referente ao sindicato" );
         System.out.println("Seu salário líquido será de R$" + salarioLiquido);
 
